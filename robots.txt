@@ -1,0 +1,6 @@
+# Allows all crawlers. To keep the invitation out of search engines,
+# replace the rules below with:  User-agent: *  /  Disallow: /
+User-agent: *
+Allow: /
+
+Sitemap: https://your-domain.example/sitemap.xml
