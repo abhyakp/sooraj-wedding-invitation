@@ -26,12 +26,6 @@
       end: istToUtc(2027, 1, 31, 11, 20),   // Muhurtham ends 11:20 AM IST
       during: 'The auspicious Muhurtham is happening now. Thank you for your blessings!',
       after: 'Sooraj & Sivakami are now married. Thank you for your love and blessings!'
-    },
-    reception: {
-      start: istToUtc(2027, 1, 31, 18, 0),  // 6:00 PM IST
-      end: istToUtc(2027, 1, 31, 21, 0),    // 9:00 PM IST
-      during: 'The reception is underway at Rajiv Gandhi Town Hall, Chalakudy. Do join us!',
-      after: 'Thank you for celebrating with us.'
     }
   };
 
@@ -151,5 +145,4 @@
   }
 
   initCountdown(document.querySelector('[data-countdown="wedding"]'), EVENTS.wedding);
-  initCountdown(document.querySelector('[data-countdown="reception"]'), EVENTS.reception);
 })();

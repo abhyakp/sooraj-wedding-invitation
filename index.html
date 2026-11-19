@@ -36,7 +36,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
 
   <script type="application/ld+json">
   {
@@ -223,23 +223,6 @@
       </div>
     </section>
 
-    <!-- ===== 7. Wedding countdown ===== -->
-    <section class="section section--cream countdown-section" id="countdown" aria-labelledby="countdown-title">
-      <div class="container">
-        <p class="eyebrow reveal">Until the Muhurtham · 10:30 AM IST</p>
-        <h2 class="section-title reveal" id="countdown-title">Counting Down to the Wedding</h2>
-        <div class="countdown reveal" data-countdown="wedding">
-          <div class="countdown__grid" data-cd-grid role="timer" aria-label="Time remaining until the wedding Muhurtham">
-            <div class="countdown__unit"><span class="countdown__num" data-cd="days">--</span><span class="countdown__lbl">Days</span></div>
-            <div class="countdown__unit"><span class="countdown__num" data-cd="hours">--</span><span class="countdown__lbl">Hours</span></div>
-            <div class="countdown__unit"><span class="countdown__num" data-cd="minutes">--</span><span class="countdown__lbl">Minutes</span></div>
-            <div class="countdown__unit"><span class="countdown__num" data-cd="seconds">--</span><span class="countdown__lbl">Seconds</span></div>
-          </div>
-          <p class="countdown__status" data-cd-status aria-live="polite" hidden></p>
-        </div>
-      </div>
-    </section>
-
     <!-- ===== 8. Transition ===== -->
     <section class="section transition" id="celebration" aria-labelledby="transition-title">
       <div class="container">
@@ -292,17 +275,6 @@
             </div>
           </div>
 
-          <div class="countdown countdown--compact" data-countdown="reception">
-            <p class="countdown__caption">Reception begins in</p>
-            <div class="countdown__grid" data-cd-grid role="timer" aria-label="Time remaining until the reception">
-              <div class="countdown__unit"><span class="countdown__num" data-cd="days">--</span><span class="countdown__lbl">Days</span></div>
-              <div class="countdown__unit"><span class="countdown__num" data-cd="hours">--</span><span class="countdown__lbl">Hours</span></div>
-              <div class="countdown__unit"><span class="countdown__num" data-cd="minutes">--</span><span class="countdown__lbl">Mins</span></div>
-              <div class="countdown__unit"><span class="countdown__num" data-cd="seconds">--</span><span class="countdown__lbl">Secs</span></div>
-            </div>
-            <p class="countdown__status" data-cd-status aria-live="polite" hidden></p>
-          </div>
-
           <a class="btn btn--gold" href="https://www.google.com/maps/search/?api=1&amp;query=Rajiv+Gandhi+Town+Hall+Chalakudy+Thrissur" target="_blank" rel="noopener">
             Get Directions <svg class="icon icon--sm" aria-hidden="true" focusable="false"><use href="#i-external"/></svg>
             <span class="sr-only">(opens Google Maps in a new tab)</span>
@@ -319,6 +291,16 @@
         <p class="closing__text reveal">Your presence and blessings will make our celebration even more special.</p>
         <h2 class="closing__names reveal" id="closing-title">Sooraj <span aria-label="and">&amp;</span> Sivakami</h2>
         <p class="closing__note reveal">We request your gracious presence and wishes only.</p>
+        <div class="countdown countdown--closing reveal" data-countdown="wedding">
+          <p class="countdown__caption">Until the Muhurtham</p>
+          <div class="countdown__grid" data-cd-grid role="timer" aria-label="Time remaining until the wedding Muhurtham">
+            <div class="countdown__unit"><span class="countdown__num" data-cd="days">--</span><span class="countdown__lbl">Days</span></div>
+            <div class="countdown__unit"><span class="countdown__num" data-cd="hours">--</span><span class="countdown__lbl">Hours</span></div>
+            <div class="countdown__unit"><span class="countdown__num" data-cd="minutes">--</span><span class="countdown__lbl">Minutes</span></div>
+            <div class="countdown__unit"><span class="countdown__num" data-cd="seconds">--</span><span class="countdown__lbl">Seconds</span></div>
+          </div>
+          <p class="countdown__status" data-cd-status aria-live="polite" hidden></p>
+        </div>
 
         <svg class="vilakku closing__vilakku reveal" viewBox="0 0 120 210" aria-hidden="true" focusable="false">
           <circle class="vilakku__glow" cx="60" cy="46" r="46" fill="url(#glowGrad)"/>
@@ -349,6 +331,6 @@
     <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up"/></svg>
   </a>
 
-  <script src="js/script.js?v=3" defer></script>
+  <script src="js/script.js?v=5" defer></script>
 </body>
 </html>

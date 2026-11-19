@@ -234,10 +234,6 @@ button, input { font: inherit; color: inherit; }
 .countdown__lbl { margin-top: .45rem; font-size: .62rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold-deep); }
 .countdown__status { font-family: var(--font-head); font-style: italic; font-size: clamp(1.3rem, 5vw, 1.7rem); color: var(--maroon); max-width: 30rem; margin: 0 auto; }
 .countdown__caption { text-align: center; font-size: .7rem; letter-spacing: .28em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: .8rem; }
-.countdown--compact { margin-top: 1.6rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
-.countdown--compact .countdown__num { font-size: clamp(1.5rem, 6.5vw, 2rem); }
-.countdown--compact .countdown__unit { padding: .7rem .2rem .55rem; }
-.countdown--compact .countdown__status { text-align: center; font-size: 1.25rem; }
 
 /* ---------- 8. Transition ---------- */
 .transition {
@@ -383,6 +379,11 @@ button, input { font: inherit; color: inherit; }
 .see-through .closing__note { color: #E9DFCB; }
 .see-through .closing__vilakku { color: var(--gold-soft); width: 60px; margin-top: 2rem; }
 .closing.see-through .divider { margin-bottom: 0; }
+.countdown--closing { margin-top: 2.2rem; }
+.see-through .countdown__caption { color: var(--gold-soft); }
+.see-through .countdown__unit { background: rgba(255, 248, 236, .08); border-color: rgba(230, 214, 176, .45); }
+.see-through .countdown__num, .see-through .countdown__status { color: #FFF8EC; }
+.see-through .countdown__lbl { color: var(--gold-soft); }
 
 /* Wide screens: full portrait photo on the right, content on the left */
 @media (min-width: 900px) and (min-aspect-ratio: 4/3) {
