@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain.example/sitemap.xml
+Sitemap: https://abhyakp.github.io/sooraj-wedding-invitation/sitemap.xml

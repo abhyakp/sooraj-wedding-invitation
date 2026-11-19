@@ -42,8 +42,7 @@ You can also open `index.html` directly.
 
 ## Before you share the link (important)
 
-1. **Replace the placeholder domain.** Search the project for `https://your-domain.example/` and replace it with your real address, e.g. `https://sooraj-sivakami.netlify.app/`. It appears in `index.html` (canonical, `og:url`, `og:image`, `twitter:image`, JSON-LD), `robots.txt` and `sitemap.xml`.
-   WhatsApp needs an **absolute** `og:image` URL to show the preview card.
+1. **Live address.** The site is published with GitHub Pages at <https://abhyakp.github.io/sooraj-wedding-invitation/>. This address is set in `index.html` (canonical, `og:url`, `og:image`, `twitter:image`, JSON-LD), `robots.txt`, `sitemap.xml` and the links in `404.html`. If you move to a custom domain, replace it in those files.
 2. Deploy, then paste the link into a WhatsApp chat with yourself to check the preview. WhatsApp caches previews, so set the domain before sending the link widely.
    You can also test it in the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/).
 
@@ -87,7 +86,6 @@ The page is indexable by default and includes title, description, Open Graph, Ev
 
 ## Launch checklist
 
-- [ ] Replace `your-domain.example` everywhere (see above)
 - [ ] Decide index vs. `noindex`
 - [ ] Open on a phone and test Get Directions
 - [ ] Check the WhatsApp/Facebook link preview
