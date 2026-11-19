@@ -266,11 +266,6 @@ button, input { font: inherit; color: inherit; }
   .event-card--evening .btn { width: auto; min-width: 260px; }
 }
 
-/* ---------- 12. Family ---------- */
-.family__hosts { font-family: var(--font-head); font-size: clamp(1.4rem, 5.4vw, 1.9rem); color: var(--charcoal); font-weight: 500; }
-.family__sharing { margin-top: 2rem; font-family: var(--font-head); font-size: 1.4rem; color: var(--maroon); }
-.family__sharing span { display: block; font-family: var(--font-body); font-size: .7rem; letter-spacing: .28em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: .3rem; }
-
 /* ---------- 13. Closing ---------- */
 .closing { background: radial-gradient(ellipse at 50% 85%, rgba(243, 213, 139, .25), transparent 60%), var(--ivory) var(--paper); }
 .closing__text { font-family: var(--font-head); font-style: italic; font-size: clamp(1.3rem, 5vw, 1.7rem); max-width: 30rem; margin: 0 auto; }
@@ -320,7 +315,7 @@ button, input { font: inherit; color: inherit; }
 
 /* ==========================================================================
    Couple photo background + see-through sections
-   (opening, wedding ceremony, family blessings). Other sections stay opaque
+   (opening, wedding ceremony, closing). Other sections stay opaque
    and scroll over the fixed photo.
    ========================================================================== */
 .photo-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; background: #2A1A17; }
@@ -375,15 +370,19 @@ button, input { font: inherit; color: inherit; }
   border-color: rgba(230, 214, 176, .6);
 }
 
-/* Family blessings: dark glass panel */
-.family.see-through { padding: clamp(6rem, 32vh, 13rem) 0; }
-.family.see-through .container {
+/* Closing: dark glass panel */
+.closing.see-through { padding: clamp(6rem, 32vh, 13rem) 0; }
+.closing.see-through .container {
   width: calc(100% - 2 * var(--gutter)); max-width: 620px; padding: 2.4rem 1.4rem;
   background: rgba(36, 16, 20, .38); border: 1px solid rgba(230, 214, 176, .45); border-radius: var(--radius);
   -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
 }
-.see-through .family__hosts, .see-through .family__sharing { color: #FFF8EC; }
-.see-through .family__sharing span { color: var(--gold-soft); }
+.see-through .closing__text { color: #FBF6EA; }
+.see-through .closing__names { color: #FFF8EC; }
+.see-through .closing__names span { color: var(--gold-soft); }
+.see-through .closing__note { color: #E9DFCB; }
+.see-through .closing__vilakku { color: var(--gold-soft); width: 60px; margin-top: 2rem; }
+.closing.see-through .divider { margin-bottom: 0; }
 
 /* Wide screens: full portrait photo on the right, content on the left */
 @media (min-width: 900px) and (min-aspect-ratio: 4/3) {
@@ -414,5 +413,5 @@ button, input { font: inherit; color: inherit; }
 
   .chapter.see-through { width: min(44vw, 680px); margin-left: 6vw; }
   .see-through > .container { margin-left: 6vw; margin-right: auto; max-width: min(44vw, 680px); }
-  .family.see-through .container { margin-left: 6vw; }
+  .closing.see-through .container { margin-left: 6vw; }
 }
