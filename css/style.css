@@ -279,7 +279,6 @@ button, input { font: inherit; color: inherit; }
 .closing__note { font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
 .closing__vilakku { width: 74px; height: auto; aspect-ratio: 120 / 210; margin: 2.6rem auto 0; }
 
-.site-footer { padding: 1.6rem var(--gutter) calc(5.5rem + env(safe-area-inset-bottom)); text-align: center; font-size: .78rem; letter-spacing: .1em; color: var(--muted); background: var(--cream); }
 
 /* ---------- Floating controls ---------- */
 .fab {
