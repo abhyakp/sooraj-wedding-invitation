@@ -7,11 +7,10 @@ Built with plain **HTML5, CSS3 and vanilla JavaScript**: no frameworks, no build
 wedding-invitation/
 ├── index.html            # the invitation (all 13 sections, SEO + Open Graph + Event JSON-LD)
 ├── css/style.css         # mobile-first styles, animations, Kasavu borders
-├── js/script.js          # countdowns, music, navigation, scroll reveal
+├── js/script.js          # countdowns, back-to-top, scroll reveal
 ├── assets/
 │   ├── images/og-image.jpg   # 1200×630 social-share image (WhatsApp/Facebook)
 │   ├── icons/                # favicon.svg, favicon-32, apple-touch-icon, 192/512 icons
-│   └── audio/                # optional licensed music file (not required)
 ├── 404.html  robots.txt  sitemap.xml  site.webmanifest
 └── README.md
 ```
@@ -23,9 +22,7 @@ wedding-invitation/
 | Groom | Sooraj, son of Mrs. Rajeswari S. & Mr. Sureshkumar C. K., Chenganikkattu Pisharam, Chalakudy, Thrissur – 680 307 |
 | Bride | Sivakami, daughter of Mrs. Deepa Sajan & Mr. Sajan T. N., Thayeri House, Aripalam, Thrissur |
 | Date | Sunday, 31 January 2027 (1202 Makaram 17) |
-| Groom's departure | 9:00 AM from the groom's residence |
 | Wedding / Muhurtham | 10:30 AM – 11:20 AM, KKMS Auditorium, Valavanangadi, Padiyoor |
-| Thalikettu | Vaikkam Sri Subramanya Swami Temple, Padiyoor (no separate time printed, so none is shown) |
 | Reception | 6:00 PM – 9:00 PM, Rajiv Gandhi Town Hall, Chalakudy |
 | Sharing the happiness | Swathy C. S. |
 
@@ -68,13 +65,6 @@ Serve over **HTTPS**.
 
 Numbers never go negative.
 
-## Background music
-
-- Music **never autoplays**. Guests tap the ♪ button (bottom-left) to play or pause, and a mute button appears once music has started.
-- By default the site plays an **original instrumental generated in the browser** with the Web Audio API: a tanpura-style drone and a soft melody in raga Mohanam. No audio file or licence is needed, and it adds 0 KB to the download.
-- To use a recording instead, place a file you hold the rights to in `assets/audio/` (e.g. `music.mp3`, ideally under 1.5 MB) and set `var MUSIC_FILE = 'assets/audio/music.mp3';` in `js/script.js`.
-- Music pauses automatically when the guest switches apps or tabs. If audio isn't supported, the controls are hidden and the site works normally.
-
 ## Privacy / search engines
 
 The page is indexable by default and includes title, description, Open Graph, Event structured data, a sitemap and robots.txt. It also lists family names and home addresses. To keep it out of Google while still sharing by link:
@@ -86,6 +76,7 @@ The page is indexable by default and includes title, description, Open Graph, Ev
 
 - **Colours and fonts**: CSS variables at the top of `css/style.css`.
 - **Text**: everything is plain HTML in `index.html`. Edit the bride/groom names in the hero, couple, closing, `<title>`/meta tags and the JSON-LD, and the countdown messages in `js/script.js`.
+- **Couple photo**: the fixed background uses `assets/images/couple-720.webp`, `couple-1200.webp`, `couple-1200.jpg` (fallback) and `couple-blur.jpg` (blurred fill on wide screens). To change the photo, replace these files at the same names. The see-through sections (opening, wedding ceremony, family blessings) carry the `see-through` class.
 - **Share image**: replace `assets/images/og-image.jpg` with any 1200×630 JPG.
 
 ## Accessibility and performance notes
@@ -98,6 +89,6 @@ The page is indexable by default and includes title, description, Open Graph, Ev
 
 - [ ] Replace `your-domain.example` everywhere (see above)
 - [ ] Decide index vs. `noindex`
-- [ ] Open on a phone and test Get Directions and music
+- [ ] Open on a phone and test Get Directions
 - [ ] Check the WhatsApp/Facebook link preview
 - [ ] Optional: submit `sitemap.xml` in Google Search Console and Bing Webmaster Tools, and add analytics (GA4/Plausible) if wanted. No IDs are included.
